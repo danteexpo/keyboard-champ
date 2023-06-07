@@ -3,25 +3,23 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: 0, 0, 0;
+	--background-end-rgb: 0, 0, 0;
 }
 
 body {
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	background: url('/repeated-square-dark.png') repeat;
+}
+
+.input-background {
+	background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+	--tw-gradient-from: #ff8a05 var(--tw-gradient-from-position);
+	--tw-gradient-to: rgb(255 138 5 / 0) var(--tw-gradient-to-position);
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+	--tw-gradient-to: rgb(255 84 120 / 0) var(--tw-gradient-to-position);
+	--tw-gradient-stops: var(--tw-gradient-from),
+		#ff5478 var(--tw-gradient-via-position), var(--tw-gradient-to);
+	--tw-gradient-to: #ff00c6 var(--tw-gradient-to-position);
 }
