@@ -143,7 +143,7 @@ export const Game = ({ setLastWPM, setHighestWPM }: GameProps) => {
 								autoFocus
 								value={userInput}
 								onChange={(e: FormEvent<HTMLInputElement>) =>
-									setUserInput(e.currentTarget.value)
+									setUserInput(e.currentTarget.value.toLowerCase())
 								}
 								disabled={inputDisabled}
 							/>
