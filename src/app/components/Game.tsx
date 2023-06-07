@@ -148,7 +148,9 @@ export const Game = ({ setLastWPM, setHighestWPM }: GameProps) => {
 								disabled={inputDisabled}
 							/>
 						</span>
-						{showSpace && <p className='absolute -right-24'>space!</p>}
+						{showSpace && (
+							<p className='absolute -right-24 hidden sm:inline'>space!</p>
+						)}
 					</span>
 
 					<p className='max-w-4xl text-center font-light'>
