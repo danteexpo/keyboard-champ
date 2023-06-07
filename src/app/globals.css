@@ -13,7 +13,7 @@ body {
 	background: url('/repeated-square-dark.png') repeat;
 }
 
-.input-background {
+.input-background-on {
 	background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 	--tw-gradient-from: #ff8a05 var(--tw-gradient-from-position);
 	--tw-gradient-to: rgb(255 138 5 / 0) var(--tw-gradient-to-position);
@@ -22,4 +22,8 @@ body {
 	--tw-gradient-stops: var(--tw-gradient-from),
 		#ff5478 var(--tw-gradient-via-position), var(--tw-gradient-to);
 	--tw-gradient-to: #ff00c6 var(--tw-gradient-to-position);
+}
+
+.input-background-off {
+	background-color: rgba(255, 255, 255, 0.75);
 }

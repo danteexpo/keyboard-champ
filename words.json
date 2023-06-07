@@ -1,104 +1,404 @@
 {
 	"words": [
-		"the",
-		"at",
-		"there",
-		"some",
-		"my",
-		"of",
-		"be",
-		"use",
-		"her",
-		"than",
-		"and",
-		"this",
-		"an",
-		"would",
-		"first",
-		"a",
-		"have",
-		"each",
-		"make",
-		"water",
-		"to",
-		"from",
-		"which",
-		"like",
-		"been",
-		"in",
-		"or",
-		"she",
-		"him",
-		"call",
-		"is",
-		"one",
-		"do",
-		"into",
-		"who",
-		"you",
-		"had",
-		"how",
-		"time",
-		"oil",
-		"that",
-		"by",
-		"their",
-		"has",
-		"its",
-		"it",
-		"word",
-		"if",
-		"look",
-		"now",
-		"he",
-		"but",
-		"will",
-		"two",
-		"find",
-		"was",
-		"not",
-		"up",
-		"more",
-		"long",
-		"for",
-		"what",
-		"other",
-		"write",
-		"down",
-		"on",
-		"all",
-		"about",
-		"go",
-		"day",
-		"are",
-		"were",
-		"out",
-		"see",
-		"did",
-		"as",
-		"we",
-		"many",
-		"number",
-		"get",
-		"with",
-		"when",
-		"then",
-		"no",
-		"come",
-		"his",
-		"your",
-		"them",
-		"way",
-		"made",
-		"they",
-		"can",
-		"these",
-		"could",
-		"may",
-		"I",
-		"said",
-		"so",
-		"people",
-		"part"
+		{
+			"word": "the",
+			"typed": false
+		},
+		{
+			"word": "at",
+			"typed": false
+		},
+		{
+			"word": "there",
+			"typed": false
+		},
+		{
+			"word": "some",
+			"typed": false
+		},
+		{
+			"word": "my",
+			"typed": false
+		},
+		{
+			"word": "of",
+			"typed": false
+		},
+		{
+			"word": "be",
+			"typed": false
+		},
+		{
+			"word": "use",
+			"typed": false
+		},
+		{
+			"word": "her",
+			"typed": false
+		},
+		{
+			"word": "than",
+			"typed": false
+		},
+		{
+			"word": "and",
+			"typed": false
+		},
+		{
+			"word": "this",
+			"typed": false
+		},
+		{
+			"word": "an",
+			"typed": false
+		},
+		{
+			"word": "would",
+			"typed": false
+		},
+		{
+			"word": "first",
+			"typed": false
+		},
+		{
+			"word": "a",
+			"typed": false
+		},
+		{
+			"word": "have",
+			"typed": false
+		},
+		{
+			"word": "each",
+			"typed": false
+		},
+		{
+			"word": "make",
+			"typed": false
+		},
+		{
+			"word": "water",
+			"typed": false
+		},
+		{
+			"word": "to",
+			"typed": false
+		},
+		{
+			"word": "from",
+			"typed": false
+		},
+		{
+			"word": "which",
+			"typed": false
+		},
+		{
+			"word": "like",
+			"typed": false
+		},
+		{
+			"word": "been",
+			"typed": false
+		},
+		{
+			"word": "in",
+			"typed": false
+		},
+		{
+			"word": "or",
+			"typed": false
+		},
+		{
+			"word": "she",
+			"typed": false
+		},
+		{
+			"word": "him",
+			"typed": false
+		},
+		{
+			"word": "call",
+			"typed": false
+		},
+		{
+			"word": "is",
+			"typed": false
+		},
+		{
+			"word": "one",
+			"typed": false
+		},
+		{
+			"word": "do",
+			"typed": false
+		},
+		{
+			"word": "into",
+			"typed": false
+		},
+		{
+			"word": "who",
+			"typed": false
+		},
+		{
+			"word": "you",
+			"typed": false
+		},
+		{
+			"word": "had",
+			"typed": false
+		},
+		{
+			"word": "how",
+			"typed": false
+		},
+		{
+			"word": "time",
+			"typed": false
+		},
+		{
+			"word": "oil",
+			"typed": false
+		},
+		{
+			"word": "that",
+			"typed": false
+		},
+		{
+			"word": "by",
+			"typed": false
+		},
+		{
+			"word": "their",
+			"typed": false
+		},
+		{
+			"word": "has",
+			"typed": false
+		},
+		{
+			"word": "its",
+			"typed": false
+		},
+		{
+			"word": "it",
+			"typed": false
+		},
+		{
+			"word": "word",
+			"typed": false
+		},
+		{
+			"word": "if",
+			"typed": false
+		},
+		{
+			"word": "look",
+			"typed": false
+		},
+		{
+			"word": "now",
+			"typed": false
+		},
+		{
+			"word": "he",
+			"typed": false
+		},
+		{
+			"word": "but",
+			"typed": false
+		},
+		{
+			"word": "will",
+			"typed": false
+		},
+		{
+			"word": "two",
+			"typed": false
+		},
+		{
+			"word": "find",
+			"typed": false
+		},
+		{
+			"word": "was",
+			"typed": false
+		},
+		{
+			"word": "not",
+			"typed": false
+		},
+		{
+			"word": "up",
+			"typed": false
+		},
+		{
+			"word": "more",
+			"typed": false
+		},
+		{
+			"word": "long",
+			"typed": false
+		},
+		{
+			"word": "for",
+			"typed": false
+		},
+		{
+			"word": "what",
+			"typed": false
+		},
+		{
+			"word": "other",
+			"typed": false
+		},
+		{
+			"word": "write",
+			"typed": false
+		},
+		{
+			"word": "down",
+			"typed": false
+		},
+		{
+			"word": "on",
+			"typed": false
+		},
+		{
+			"word": "all",
+			"typed": false
+		},
+		{
+			"word": "about",
+			"typed": false
+		},
+		{
+			"word": "go",
+			"typed": false
+		},
+		{
+			"word": "day",
+			"typed": false
+		},
+		{
+			"word": "are",
+			"typed": false
+		},
+		{
+			"word": "were",
+			"typed": false
+		},
+		{
+			"word": "out",
+			"typed": false
+		},
+		{
+			"word": "see",
+			"typed": false
+		},
+		{
+			"word": "did",
+			"typed": false
+		},
+		{
+			"word": "as",
+			"typed": false
+		},
+		{
+			"word": "we",
+			"typed": false
+		},
+		{
+			"word": "many",
+			"typed": false
+		},
+		{
+			"word": "number",
+			"typed": false
+		},
+		{
+			"word": "get",
+			"typed": false
+		},
+		{
+			"word": "with",
+			"typed": false
+		},
+		{
+			"word": "when",
+			"typed": false
+		},
+		{
+			"word": "then",
+			"typed": false
+		},
+		{
+			"word": "no",
+			"typed": false
+		},
+		{
+			"word": "come",
+			"typed": false
+		},
+		{
+			"word": "his",
+			"typed": false
+		},
+		{
+			"word": "your",
+			"typed": false
+		},
+		{
+			"word": "them",
+			"typed": false
+		},
+		{
+			"word": "way",
+			"typed": false
+		},
+		{
+			"word": "made",
+			"typed": false
+		},
+		{
+			"word": "they",
+			"typed": false
+		},
+		{
+			"word": "can",
+			"typed": false
+		},
+		{
+			"word": "these",
+			"typed": false
+		},
+		{
+			"word": "could",
+			"typed": false
+		},
+		{
+			"word": "may",
+			"typed": false
+		},
+		{
+			"word": "I",
+			"typed": false
+		},
+		{
+			"word": "said",
+			"typed": false
+		},
+		{
+			"word": "so",
+			"typed": false
+		},
+		{
+			"word": "people",
+			"typed": false
+		},
+		{
+			"word": "part",
+			"typed": false
+		}
 	]
 }
