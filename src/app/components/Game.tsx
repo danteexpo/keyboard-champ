@@ -26,6 +26,7 @@ export const Game = ({ setLastWPM, setHighestWPM }: GameProps) => {
 	const [timer, setTimer] = useState(15);
 	const [userInput, setUserInput] = useState('');
 	const [inputDisabled, setInputDisabled] = useState(false);
+	const [showSpace, setShowSpace] = useState(false);
 
 	const shuffleWords = (array: Words) => {
 		let currentIndex = array.length,
@@ -66,9 +67,14 @@ export const Game = ({ setLastWPM, setHighestWPM }: GameProps) => {
 					.reduce((acc, cur) => (acc += cur.word.length), 0) +
 					wordIndex / 5 / 0.25
 			);
+			setUserInput('');
 			setInputDisabled(true);
 			setLastWPM(totalWPM);
+			localStorage.setItem('localLastWPM', String(totalWPM));
 			setHighestWPM(prev => (prev > totalWPM ? prev : totalWPM));
+			if (totalWPM > Number(localStorage.getItem('localHighestWPM'))) {
+				localStorage.setItem('localHighestWPM', String(totalWPM));
+			}
 		}
 	}, [gameFinished, randomizedWords, wordIndex, setLastWPM, setHighestWPM]);
 
@@ -85,10 +91,12 @@ export const Game = ({ setLastWPM, setHighestWPM }: GameProps) => {
 		if (randomizedWords.length === 0) {
 			return;
 		}
-		console.log('randomizedWord: ', randomizedWords[wordIndex].word);
-		console.log('userInput: ', userInput);
 		if (userInput !== '') {
 			setGameStarted(true);
+		}
+		setShowSpace(false);
+		if (userInput === randomizedWords[wordIndex].word && wordIndex < 3) {
+			setShowSpace(true);
 		}
 		if (userInput === randomizedWords[wordIndex].word + ' ') {
 			setRandomizedWords(prev =>
@@ -123,31 +131,34 @@ export const Game = ({ setLastWPM, setHighestWPM }: GameProps) => {
 						)}
 					</span>
 
-					<span
-						className={`${
-							inputDisabled ? 'input-background-off' : 'input-background-on'
-						} p-1`}
-					>
-						<input
-							type='text'
-							className='bg-black font-light py-2 px-4 w-64 outline-none'
-							autoFocus
-							value={userInput}
-							onChange={(e: FormEvent<HTMLInputElement>) =>
-								setUserInput(e.currentTarget.value)
-							}
-							disabled={inputDisabled}
-						/>
+					<span className='relative grid place-items-center'>
+						<span
+							className={`${
+								inputDisabled ? 'input-background-off' : 'input-background-on'
+							} p-1`}
+						>
+							<input
+								type='text'
+								className='bg-black font-light py-2 px-4 w-64 outline-none'
+								autoFocus
+								value={userInput}
+								onChange={(e: FormEvent<HTMLInputElement>) =>
+									setUserInput(e.currentTarget.value)
+								}
+								disabled={inputDisabled}
+							/>
+						</span>
+						{showSpace && <p className='absolute -right-24'>space!</p>}
 					</span>
 
-					<p className='max-w-4xl text-center'>
+					<p className='max-w-4xl text-center font-light'>
 						{randomizedWords.map(word => (
 							<span
 								key={word.word}
 								className={`${
 									word.typed
 										? 'font-bold text-transparent bg-clip-text bg-gradient-to-br from-from via-via to-to'
-										: 'font-light opacity-75'
+										: ''
 								}`}
 							>
 								{word.word}{' '}

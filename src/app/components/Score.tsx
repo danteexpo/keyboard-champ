@@ -5,9 +5,9 @@ type ScoreProps = {
 
 export const Score = ({ lastWPM, highestWPM }: ScoreProps) => {
 	return (
-		<section className='flex justify-between items-center text-2xl font-bold'>
+		<section className='flex justify-between items-center text-2xl'>
 			<div className='flex items-center gap-2'>
-				<span className='text-right'>
+				<span className='text-right font-bold'>
 					<p className='text-transparent bg-clip-text bg-gradient-to-br from-from via-via to-to'>
 						last
 					</p>
